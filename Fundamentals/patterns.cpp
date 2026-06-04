@@ -235,8 +235,7 @@ int main()
             cout << " ";
         }
         cout << "*";
-        // cout << endl;
-
+        
         if (i != n - 2)
         {
             for (int j = 0; j < 2 * (n - i) - 5; j++)
