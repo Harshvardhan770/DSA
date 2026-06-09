@@ -18,14 +18,36 @@ int factorial(int n)
     }
     return fact;
 }
+int sumOfDigits(int num)
+{
+    int sum = 0;
+    int lastdigit;
+    while (num > 0)
+    {
+        lastdigit = num % 10;
+        num = num / 10;
+        sum += lastdigit;
+    }
+
+    return sum;
+}
 int main()
 {
     cout << sum(5) << endl;
     cout << sum(10) << endl;
     cout << sum(15) << endl;
 
-    cout<<endl<<endl;
+    cout << endl
+         << endl;
     cout << factorial(4) << endl;
     cout << factorial(5) << endl;
+
+    cout << endl
+         << endl;
+    cout << sumOfDigits(555) << endl;
+    cout << sumOfDigits(5555) << endl;
+    cout << sumOfDigits(55555) << endl;
+    cout << sumOfDigits(55) << endl;
+
     return 0;
 }
